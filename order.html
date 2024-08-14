@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order page</title>
+</head>
+<body>
+    <form action="./orderresponse.html" method="get">
+        <label for="name"> Name of the customer </label>
+        <input type="text" id="name" name="csname" required
+        pattern="[A-z][a-z]{,32}"
+        title="The name should charchters and max of 32 length"><br>
+        <label for="phno">Phone Number </label>
+        <input type="text" name="phno" id="phno" required
+        pattern="+91[6-9][0-9]{10,10}"
+        title="The phone number should be in the indian format"><br>
+        <label for="items">Items</label>
+        <input type="text" name="items" id="items" required><br>
+        <label for="cost">Total amount</label>
+        <input type="number" name="cost" id="cost" required><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
